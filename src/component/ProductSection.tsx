@@ -81,7 +81,7 @@ export default function ProductSection({ title, products }: ProductSectionProps)
             {/* Tombol close */}
             <button
               onClick={() => setSelectedProduct(null)}
-              className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 text-3xl"
+              className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 text-3xl cursor-pointer"
             >
               ✕
             </button>
@@ -152,9 +152,9 @@ export default function ProductSection({ title, products }: ProductSectionProps)
                 )}
 
                 <a
-                  href={`https://wa.me/6281387705284?text=${encodeURIComponent(
-                    `Halo Admin, saya tertarik dengan produk ${selectedProduct.name}. 
-Boleh dibantu dengan informasi detail dan penawaran harganya?`
+                    href={`https://wa.me/6281387705284?text=${encodeURIComponent(
+                      `Halo Admin, saya tertarik dengan produk ${selectedProduct.name}. 
+                        Boleh dibantu dengan informasi detail dan penawaran harganya?`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
